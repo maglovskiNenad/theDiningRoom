@@ -1,0 +1,3 @@
+<button [disabled]="page <= 1" class="btn btn-primary" (click)="changePage(page-1)">Previous</button>
+<span *ngFor="let i of pages">{{i}}</span>
+<button [disabled]="page > collectionSize/pageSize" class="btn btn-primary" (click)="changePage(page+1)">Next</button>
